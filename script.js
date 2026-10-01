@@ -7,15 +7,15 @@ let url=document.querySelector("#url")
 let year=document.querySelector("#year")
 let submit=document.querySelector("#button")
 submit.addEventListener("click",()=>{
-    if(name.target.value && year.target.value){
-        url.target.textContent=`${url.target.textContent}?name=${name.target.value}&year=${year.target.value}`
+    if(name.value && year.value){
+        url.textContent=`${url.textContent}?name=${name.value}&year=${year.value}`
     }
-    else if(name.target.value){
-     url.target.textContent=`${url.target.textContent}?name=${name.target.value}`
+    else if(name.value){
+     url.textContent=`${url.textContent}?name=${name.value}`
 
     }
-    else if(year.target.value){
-     url.target.textContent=`${url.target.textContent}?year=${year.target.value}`
+    else if(year.value){
+     url.textContent=`${url.textContent}?year=${year.value}`
     }
    
 
